@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/abstrack_bg2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F8CEEC">
+        <ImageButton
+            android:id="@+id/button_home"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_home"
+            android:background="#A88BEB"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Add Personal Data"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="650dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="insert name..."
+            android:textColorHint="@color/white"
+            android:paddingLeft="15dp"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/input"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="-10dp">
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="16dp"
+                android:textColor="@color/white"/>
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="16dp"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/edit_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="insert country..."
+            android:textColorHint="@color/white"
+            android:paddingLeft="15dp"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/input"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/edit_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="insert address..."
+            android:textColorHint="@color/white"
+            android:paddingLeft="15dp"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/input"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/edit_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="insert phone number..."
+            android:textColorHint="@color/white"
+            android:paddingLeft="15dp"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/input"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="insert email..."
+            android:textColorHint="@color/white"
+            android:paddingLeft="15dp"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/input"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Submit"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_submit"
+            android:textSize="17dp"/>
+    </LinearLayout>
+
+</LinearLayout>

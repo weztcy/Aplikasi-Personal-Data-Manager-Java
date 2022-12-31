@@ -56,22 +56,20 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                 menu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
-                        if(item.getTitle().equals("DELETE")){
-                            //delete the note
-                            Realm realm = Realm.getDefaultInstance();
-                            realm.beginTransaction();
-                            note.deleteFromRealm();
-                            realm.commitTransaction();
-                            Toast.makeText(context,"Note deleted",Toast.LENGTH_SHORT).show();
-                        } else if (item.getTitle().equals("EDIT")){
-                            //edit the note
+                        if (item.getTitle().equals("EDIT")){
                             Intent intent = new Intent(context,EditNoteActivity.class);
-//                            intent.putExtra("id",note.getId());
                             intent.putExtra("title",note.getTitle());
                             intent.putExtra("description",note.getDescription());
                             intent.putExtra("time",note.getCreatedTime());
                             intent.setFlags(FLAG_ACTIVITY_NEW_TASK);
                             context.startActivity(intent);
+                        }
+                        else if(item.getTitle().equals("DELETE")){
+                            Realm realm = Realm.getDefaultInstance();
+                            realm.beginTransaction();
+                            note.deleteFromRealm();
+                            realm.commitTransaction();
+                            Toast.makeText(context,"Note deleted",Toast.LENGTH_SHORT).show();
                         }
                         return true;
                     }

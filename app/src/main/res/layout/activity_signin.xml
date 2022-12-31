@@ -50,6 +50,7 @@
             android:textColor="@color/black"
             android:inputType="text"
             android:hint="email@gmail.com"
+            android:textColorHint="#808080"
             android:drawablePadding="10dp"/>
         <TextView
             android:layout_width="match_parent"
@@ -67,7 +68,8 @@
             android:background="@drawable/input"
             android:inputType="textPassword"
             android:hint="********"
-            android:drawablePadding="10dp" />
+            android:drawablePadding="10dp"
+            android:textColorHint="#808080"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"

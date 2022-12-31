@@ -54,7 +54,8 @@
             android:drawableStart="@drawable/img_username"
             android:paddingStart="13dp"
             android:drawablePadding="10dp"
-            android:hint="your name" />
+            android:hint="your name"
+            android:textColorHint="#808080"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -72,7 +73,8 @@
             android:drawableStart="@drawable/img_email"
             android:paddingStart="13dp"
             android:drawablePadding="10dp"
-            android:hint="email@gmail.com" />
+            android:hint="email@gmail.com"
+            android:textColorHint="#808080"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -90,7 +92,8 @@
             android:paddingStart="13dp"
             android:drawablePadding="10dp"
             android:hint="********"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            android:textColorHint="#808080"/>
     </LinearLayout>
 
     <LinearLayout

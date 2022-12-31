@@ -54,7 +54,8 @@
             android:drawableStart="@drawable/img_email"
             android:paddingStart="13dp"
             android:drawablePadding="10dp"
-            android:hint="email@gmail.com" />
+            android:hint="email@gmail.com"
+            android:textColorHint="#808080"/>
     </LinearLayout>
 
     <LinearLayout

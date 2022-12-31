@@ -89,7 +89,8 @@
             android:drawableStart="@drawable/img_password"
             android:paddingStart="13dp"
             android:drawablePadding="10dp"
-            android:hint="********" />
+            android:hint="********"
+            android:inputType="textPassword"/>
     </LinearLayout>
 
     <LinearLayout
